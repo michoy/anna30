@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ heading }}</h2>
+<p>{{ message|safe }}</p>
+<form action="/race" method="post">
+    <button type="submit" name="accept" value="ja">Ja, la oss kjøre!</button>
+    <button type="submit" name="accept" value="selvfølgelig">Selvfølgelig!</button>
+</form>
+{% endblock %}

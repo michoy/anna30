@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Anna på bursdagseventyr</h2>
+<p>
+    Anna sitter ved bussholdeplassen.<br>
+    Hun har akkurat vært på Muay Thai trening og gleder seg nå til en middag med Sebastian.<br>
+    En mystisk gammel dame sitter ved siden av henne og begynner å småprate med henne.<br>
+    Damen så at Anna kom fra Muay Thai Dojoen og nevner at hun selv også var aktiv utøver da hun var yngre.<br>
+    Anna er ikke i humør for småprat og vil helst høre på musikk i ro.
+</p>
+<form action="/roll" method="post">
+    <button type="submit">Kast terningen!</button>
+</form>
+{% endblock %}

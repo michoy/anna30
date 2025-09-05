@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>KAPPLØP!</h2>
+<audio src="/static/mariokart.mp3" autoplay controls ></audio>
+<p>
+    De dundrer av gårde på dramatisk vis.<br>
+    Begge kjører slalom mellom bilene på veien og slædder igjennom svingene de ser.<br>
+    Anna kjører på en boost og ser to muligheter for hva hun skal gjøre.
+</p>
+<form action="/boost" method="post">
+    <button type="submit" name="valg" value="krasj">Kræsje i Sebastian</button>
+    <button type="submit" name="valg" value="rundt">Kjøre rundt for å bygge opp mer fart</button>
+</form>
+{% endblock %}
